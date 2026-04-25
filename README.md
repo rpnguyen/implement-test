@@ -1,4 +1,4 @@
-# WPC Interview - Virtual 1: Implement (AI-Assisted)
+# Interview - Virtual 1: Implement (AI-Assisted)
 
 ## Your Task
 
