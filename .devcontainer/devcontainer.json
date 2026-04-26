@@ -1,7 +1,21 @@
 {
   "name": "WPC Interview - Implement",
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "postCreateCommand": "npm install -g @anthropic-ai/claude-code",
+  "image": "mcr.microsoft.com/devcontainers/base:debian",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "21",
+      "installGradle": "true"
+    },
+    "ghcr.io/devcontainers-extra/features/claude-code:2": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "fwcd.kotlin",
+        "vscjava.vscode-java-pack"
+      ]
+    }
+  },
   "remoteEnv": {
     "ANTHROPIC_API_KEY": "${localEnv:ANTHROPIC_API_KEY}"
   }

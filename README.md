@@ -1,18 +1,19 @@
-# Interview - Virtual 1: Implement (AI-Assisted)
+# payment-webhook-handler
 
-## Your Task
+Receives payment status events from the Payments Platform and updates order state.
 
-Use Claude Code to implement a webhook handler for the spec in `spec.md`.
-
-Talk through your approach as you go - what questions you'd want answered before
-starting, and what you'd want to validate in the output before shipping it.
-
-## Getting Started
-
-Claude Code is available in the terminal:
+## Building
 
 ```bash
-claude
+./gradlew build
 ```
 
-`ANTHROPIC_API_KEY` is already configured in this environment.
+## Running
+
+```bash
+./gradlew run
+```
+
+## Spec
+
+See `spec.md` for the webhook contract.
