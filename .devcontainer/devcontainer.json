@@ -15,12 +15,12 @@
         "vscjava.vscode-java-pack"
       ],
       "settings": {
-        "claudeCode.useTerminal": true,
         "claudeCode.disableLoginPrompt": true
       }
     }
   },
   "remoteEnv": {
     "ANTHROPIC_API_KEY": "${localEnv:ANTHROPIC_API_KEY}"
-  }
+  },
+  "postCreateCommand": "printf '{\"primaryApiKey\":\"%s\",\"hasCompletedOnboarding\":true}\\n' \"$ANTHROPIC_API_KEY\" > ~/.claude.json"
 }
