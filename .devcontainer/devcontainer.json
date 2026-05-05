@@ -15,6 +15,7 @@
         "vscjava.vscode-java-pack"
       ],
       "settings": {
+        "claudeCode.useTerminal": true,
         "claudeCode.disableLoginPrompt": true
       }
     }
